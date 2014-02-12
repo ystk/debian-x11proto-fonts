@@ -1,3 +1,49 @@
+x11proto-fonts (2.1.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Move fontsproto.pc to /usr/share/pkgconfig.
+  * Don't require (fake)root for debian/rules clean.
+  * Add build-{arch,indep} debian/rules targets.
+  * We no longer install xorg.css, and exclude *.db.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 15 Apr 2012 15:17:12 +0200
+
+x11proto-fonts (2.1.1-3) unstable; urgency=low
+
+  * *Really* mark the package Multi-Arch: foreign, since I seem to have
+    thinkoed this in the previous upload. :P
+
+ -- Steve Langasek <vorlon@debian.org>  Mon, 06 Feb 2012 19:09:42 -0800
+
+x11proto-fonts (2.1.1-2) unstable; urgency=low
+
+  * Mark x11proto-fonts-dev Multi-Arch: foreign
+
+ -- Steve Langasek <vorlon@debian.org>  Tue, 15 Nov 2011 11:39:24 -0800
+
+x11proto-fonts (2.1.1-1) unstable; urgency=low
+
+  [ Julien Cristau ]
+  * Rename the build directory to not include DEB_BUILD_GNU_TYPE for no
+    good reason.  Thanks, Colin Watson!
+  * Remove myself from Uploaders
+
+  [ Robert Hooker ]
+  * New upstream release.
+  * Bump xutils-dev build dep to 1:7.5+5 for util-macros 1.10 requirement.
+
+  [ Cyril Brulebois ]
+  * Add pkg-config build-dep.
+  * Add xmlto, xorg-sgml-doctools, and w3m build-dep for the specs.
+  * Pass --with-xmlto and --without-fop, we want html and txt only.
+  * Ship *.html, *.css, and *.txt from the doc directory.
+  * Kill *.xml in the doc directory, no point in shipping them.
+  * Switch from --list-missing to --fail-missing for additional safety.
+  * No longer pass --disable-shared, this option is gone.
+  * Add myself to Uploaders.
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 06 Nov 2010 01:23:21 +0100
+
 x11proto-fonts (2.1.0-1) unstable; urgency=low
 
   * New upstream release.
